@@ -742,6 +742,7 @@ src="https://www.facebook.com/tr?id=9401169896605414&ev=PageView&noscript=1"/></
 </head>
 <body>
 
+<div id="mainSite">
 <!-- NAV -->
 <nav>
   <a href="#" class="nav-logo">Pristine<span>.</span></a>
@@ -1166,12 +1167,13 @@ src="https://www.facebook.com/tr?id=9401169896605414&ev=PageView&noscript=1"/></
           <li><a href="#quote">Free Quote</a></li>
           <li><a href="#areas">Service Areas</a></li>
           <li><a href="#reviews">Reviews</a></li>
+          <li><a href="#" onclick="showPrivacy();return false;">Privacy Policy</a></li>
         </ul>
       </div>
     </div>
     <div class="footer-bottom">
       <p>© 2025 Pristine Home Painters. Melbourne VIC, Australia.</p>
-      <p>Built by <a href="#">Studio</a> · <a href="https://www.pristinehomepainters.com">pristinehomepainters.com</a></p>
+      <p><a href="#" onclick="showPrivacy();return false;" style="color:var(--accent);text-decoration:none;font-size:13px;">Privacy Policy</a></p>
     </div>
   </div>
 </footer>
@@ -1262,6 +1264,146 @@ document.querySelectorAll('a[href^="#"]').forEach(a => {
     }
   });
 });
+function showPrivacy() {
+  document.getElementById('mainSite').style.display = 'none';
+  document.getElementById('privacyPage').style.display = 'block';
+  window.scrollTo(0, 0);
+}
+function showMain() {
+  document.getElementById('privacyPage').style.display = 'none';
+  document.getElementById('mainSite').style.display = 'block';
+  window.scrollTo(0, 0);
+}
 </script>
+</script>
+</div>
+
+<!-- PRIVACY POLICY PAGE -->
+<div id="privacyPage" style="display:none;">
+  <div style="background:#0D1B2A;position:sticky;top:0;z-index:100;padding:18px 32px;display:flex;align-items:center;justify-content:space-between;">
+    <a href="#" onclick="showMain();return false;" style="font-family:'Playfair Display',serif;color:#fff;font-size:20px;text-decoration:none;letter-spacing:0.02em;">Pristine<span style="color:#C8A96E;">.</span></a>
+    <button onclick="showMain()" style="display:inline-flex;align-items:center;gap:8px;background:transparent;border:1px solid rgba(255,255,255,0.25);color:#fff;padding:10px 20px;border-radius:2px;cursor:pointer;font-family:Inter,sans-serif;font-size:14px;letter-spacing:0.04em;">
+      ← Back to Site
+    </button>
+  </div>
+
+  <div style="background:#0D1B2A;padding:80px 32px 60px;text-align:center;">
+    <div style="color:#C8A96E;font-size:11px;letter-spacing:0.12em;text-transform:uppercase;font-family:Inter,sans-serif;margin-bottom:12px;">Legal</div>
+    <h1 style="font-family:'Playfair Display',serif;color:#fff;font-size:clamp(32px,5vw,52px);line-height:1.1;margin-bottom:14px;">Privacy Policy</h1>
+    <p style="color:rgba(255,255,255,0.5);font-size:15px;font-family:Inter,sans-serif;">Effective Date: December 5, 2025</p>
+  </div>
+
+  <div style="max-width:780px;margin:0 auto;padding:64px 24px 100px;font-family:Inter,sans-serif;">
+
+    <p style="font-size:15px;color:#666;line-height:1.8;margin-bottom:48px;padding-bottom:48px;border-bottom:1px solid rgba(0,0,0,0.08);">At Pristine Home Painters we respect your privacy and are committed to protecting your personal information. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit <a href="#" onclick="showMain();return false;" style="color:#0D1B2A;font-weight:500;">www.pristinehomepainters.com</a>, contact us, or use our services.</p>
+
+    <div style="margin-bottom:48px;padding-bottom:48px;border-bottom:1px solid rgba(0,0,0,0.08);">
+      <div style="color:#C8A96E;font-size:11px;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;margin-bottom:8px;">Section 01</div>
+      <h2 style="font-family:'Playfair Display',serif;font-size:22px;color:#0D1B2A;margin-bottom:16px;">Information We Collect</h2>
+      <p style="font-size:15px;color:#444;font-weight:600;margin-bottom:8px;">Personal Information</p>
+      <ul style="list-style:none;margin-bottom:16px;">
+        <li style="font-size:15px;color:#666;line-height:1.7;padding:5px 0 5px 18px;position:relative;"><span style="position:absolute;left:0;top:13px;width:6px;height:6px;background:#C8A96E;border-radius:50%;display:block;"></span>Name, email address, phone number, mailing address</li>
+        <li style="font-size:15px;color:#666;line-height:1.7;padding:5px 0 5px 18px;position:relative;"><span style="position:absolute;left:0;top:13px;width:6px;height:6px;background:#C8A96E;border-radius:50%;display:block;"></span>Any other information you voluntarily provide when you fill out a contact form, request a quote, or communicate with us</li>
+      </ul>
+      <p style="font-size:15px;color:#444;font-weight:600;margin-bottom:8px;">Non-Personal Information</p>
+      <ul style="list-style:none;">
+        <li style="font-size:15px;color:#666;line-height:1.7;padding:5px 0 5px 18px;position:relative;"><span style="position:absolute;left:0;top:13px;width:6px;height:6px;background:#C8A96E;border-radius:50%;display:block;"></span>Browser type, IP address, device information, referring pages</li>
+        <li style="font-size:15px;color:#666;line-height:1.7;padding:5px 0 5px 18px;position:relative;"><span style="position:absolute;left:0;top:13px;width:6px;height:6px;background:#C8A96E;border-radius:50%;display:block;"></span>Usage data collected automatically through cookies and similar technologies</li>
+      </ul>
+    </div>
+
+    <div style="margin-bottom:48px;padding-bottom:48px;border-bottom:1px solid rgba(0,0,0,0.08);">
+      <div style="color:#C8A96E;font-size:11px;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;margin-bottom:8px;">Section 02</div>
+      <h2 style="font-family:'Playfair Display',serif;font-size:22px;color:#0D1B2A;margin-bottom:16px;">How We Collect Information</h2>
+      <ul style="list-style:none;">
+        <li style="font-size:15px;color:#666;line-height:1.7;padding:5px 0 5px 18px;position:relative;"><span style="position:absolute;left:0;top:13px;width:6px;height:6px;background:#C8A96E;border-radius:50%;display:block;"></span>Directly from you when you submit forms or communicate with us</li>
+        <li style="font-size:15px;color:#666;line-height:1.7;padding:5px 0 5px 18px;position:relative;"><span style="position:absolute;left:0;top:13px;width:6px;height:6px;background:#C8A96E;border-radius:50%;display:block;"></span>Automatically through cookies, Google Analytics, Meta Pixel, or other tracking technologies</li>
+        <li style="font-size:15px;color:#666;line-height:1.7;padding:5px 0 5px 18px;position:relative;"><span style="position:absolute;left:0;top:13px;width:6px;height:6px;background:#C8A96E;border-radius:50%;display:block;"></span>From third-party services (e.g., Google, Facebook) when you interact with our ads or embedded content</li>
+      </ul>
+    </div>
+
+    <div style="margin-bottom:48px;padding-bottom:48px;border-bottom:1px solid rgba(0,0,0,0.08);">
+      <div style="color:#C8A96E;font-size:11px;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;margin-bottom:8px;">Section 03</div>
+      <h2 style="font-family:'Playfair Display',serif;font-size:22px;color:#0D1B2A;margin-bottom:16px;">How We Use Your Information</h2>
+      <ul style="list-style:none;">
+        <li style="font-size:15px;color:#666;line-height:1.7;padding:5px 0 5px 18px;position:relative;"><span style="position:absolute;left:0;top:13px;width:6px;height:6px;background:#C8A96E;border-radius:50%;display:block;"></span>Provide, operate, and improve our painting services</li>
+        <li style="font-size:15px;color:#666;line-height:1.7;padding:5px 0 5px 18px;position:relative;"><span style="position:absolute;left:0;top:13px;width:6px;height:6px;background:#C8A96E;border-radius:50%;display:block;"></span>Respond to inquiries and send project quotes or appointment confirmations</li>
+        <li style="font-size:15px;color:#666;line-height:1.7;padding:5px 0 5px 18px;position:relative;"><span style="position:absolute;left:0;top:13px;width:6px;height:6px;background:#C8A96E;border-radius:50%;display:block;"></span>Send marketing communications — you can opt out at any time</li>
+        <li style="font-size:15px;color:#666;line-height:1.7;padding:5px 0 5px 18px;position:relative;"><span style="position:absolute;left:0;top:13px;width:6px;height:6px;background:#C8A96E;border-radius:50%;display:block;"></span>Improve our website and customer experience</li>
+        <li style="font-size:15px;color:#666;line-height:1.7;padding:5px 0 5px 18px;position:relative;"><span style="position:absolute;left:0;top:13px;width:6px;height:6px;background:#C8A96E;border-radius:50%;display:block;"></span>Comply with legal obligations</li>
+      </ul>
+    </div>
+
+    <div style="margin-bottom:48px;padding-bottom:48px;border-bottom:1px solid rgba(0,0,0,0.08);">
+      <div style="color:#C8A96E;font-size:11px;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;margin-bottom:8px;">Section 04</div>
+      <h2 style="font-family:'Playfair Display',serif;font-size:22px;color:#0D1B2A;margin-bottom:16px;">Sharing Your Information</h2>
+      <p style="font-size:15px;color:#666;line-height:1.8;margin-bottom:12px;">We do not sell, trade, or rent your personal information to third parties. We may share your information with:</p>
+      <ul style="list-style:none;">
+        <li style="font-size:15px;color:#666;line-height:1.7;padding:5px 0 5px 18px;position:relative;"><span style="position:absolute;left:0;top:13px;width:6px;height:6px;background:#C8A96E;border-radius:50%;display:block;"></span>Trusted service providers who assist us (e.g., website hosting, email services, payment processors)</li>
+        <li style="font-size:15px;color:#666;line-height:1.7;padding:5px 0 5px 18px;position:relative;"><span style="position:absolute;left:0;top:13px;width:6px;height:6px;background:#C8A96E;border-radius:50%;display:block;"></span>Law enforcement or government authorities when required by law</li>
+        <li style="font-size:15px;color:#666;line-height:1.7;padding:5px 0 5px 18px;position:relative;"><span style="position:absolute;left:0;top:13px;width:6px;height:6px;background:#C8A96E;border-radius:50%;display:block;"></span>In the event of a merger, acquisition, or sale of assets</li>
+      </ul>
+    </div>
+
+    <div style="margin-bottom:48px;padding-bottom:48px;border-bottom:1px solid rgba(0,0,0,0.08);">
+      <div style="color:#C8A96E;font-size:11px;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;margin-bottom:8px;">Section 05</div>
+      <h2 style="font-family:'Playfair Display',serif;font-size:22px;color:#0D1B2A;margin-bottom:16px;">Cookies and Tracking Technologies</h2>
+      <p style="font-size:15px;color:#666;line-height:1.8;margin-bottom:12px;">Our website uses cookies and similar technologies to enhance user experience and analyse traffic. You can control cookies through your browser settings.</p>
+      <p style="font-size:15px;color:#666;line-height:1.8;">We use Google Analytics and Meta Pixel. See <a href="https://policies.google.com/privacy" target="_blank" style="color:#0D1B2A;font-weight:500;">Google's Privacy Policy</a> and <a href="https://www.facebook.com/privacy/policy" target="_blank" style="color:#0D1B2A;font-weight:500;">Meta's Privacy Policy</a> for more details.</p>
+    </div>
+
+    <div style="margin-bottom:48px;padding-bottom:48px;border-bottom:1px solid rgba(0,0,0,0.08);">
+      <div style="color:#C8A96E;font-size:11px;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;margin-bottom:8px;">Section 06</div>
+      <h2 style="font-family:'Playfair Display',serif;font-size:22px;color:#0D1B2A;margin-bottom:16px;">Third-Party Links</h2>
+      <p style="font-size:15px;color:#666;line-height:1.8;">Our website may contain links to third-party websites. We are not responsible for the privacy practices of those sites.</p>
+    </div>
+
+    <div style="margin-bottom:48px;padding-bottom:48px;border-bottom:1px solid rgba(0,0,0,0.08);">
+      <div style="color:#C8A96E;font-size:11px;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;margin-bottom:8px;">Section 07</div>
+      <h2 style="font-family:'Playfair Display',serif;font-size:22px;color:#0D1B2A;margin-bottom:16px;">Data Security</h2>
+      <p style="font-size:15px;color:#666;line-height:1.8;">We implement reasonable administrative, technical, and physical safeguards to protect your information. However, no method of transmission over the internet is 100% secure.</p>
+    </div>
+
+    <div style="margin-bottom:48px;padding-bottom:48px;border-bottom:1px solid rgba(0,0,0,0.08);">
+      <div style="color:#C8A96E;font-size:11px;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;margin-bottom:8px;">Section 08</div>
+      <h2 style="font-family:'Playfair Display',serif;font-size:22px;color:#0D1B2A;margin-bottom:16px;">Your Rights and Choices</h2>
+      <ul style="list-style:none;">
+        <li style="font-size:15px;color:#666;line-height:1.7;padding:5px 0 5px 18px;position:relative;"><span style="position:absolute;left:0;top:13px;width:6px;height:6px;background:#C8A96E;border-radius:50%;display:block;"></span>Opt out of marketing emails by clicking "unsubscribe" or contacting us</li>
+        <li style="font-size:15px;color:#666;line-height:1.7;padding:5px 0 5px 18px;position:relative;"><span style="position:absolute;left:0;top:13px;width:6px;height:6px;background:#C8A96E;border-radius:50%;display:block;"></span>Request access to, correction of, or deletion of your personal information</li>
+        <li style="font-size:15px;color:#666;line-height:1.7;padding:5px 0 5px 18px;position:relative;"><span style="position:absolute;left:0;top:13px;width:6px;height:6px;background:#C8A96E;border-radius:50%;display:block;"></span>Disable cookies in your browser settings</li>
+      </ul>
+    </div>
+
+    <div style="margin-bottom:48px;padding-bottom:48px;border-bottom:1px solid rgba(0,0,0,0.08);">
+      <div style="color:#C8A96E;font-size:11px;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;margin-bottom:8px;">Section 09</div>
+      <h2 style="font-family:'Playfair Display',serif;font-size:22px;color:#0D1B2A;margin-bottom:16px;">Children's Privacy</h2>
+      <p style="font-size:15px;color:#666;line-height:1.8;">Our services are not directed to individuals under 13. We do not knowingly collect personal information from children under 13.</p>
+    </div>
+
+    <div style="margin-bottom:48px;padding-bottom:48px;border-bottom:1px solid rgba(0,0,0,0.08);">
+      <div style="color:#C8A96E;font-size:11px;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;margin-bottom:8px;">Section 10</div>
+      <h2 style="font-family:'Playfair Display',serif;font-size:22px;color:#0D1B2A;margin-bottom:16px;">Changes to This Privacy Policy</h2>
+      <p style="font-size:15px;color:#666;line-height:1.8;">We may update this Privacy Policy from time to time. The updated version will be posted on this page with a revised Effective Date.</p>
+    </div>
+
+    <div>
+      <div style="color:#C8A96E;font-size:11px;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;margin-bottom:8px;">Section 11</div>
+      <h2 style="font-family:'Playfair Display',serif;font-size:22px;color:#0D1B2A;margin-bottom:16px;">Contact Us</h2>
+      <p style="font-size:15px;color:#666;line-height:1.8;margin-bottom:16px;">If you have questions about this Privacy Policy, please contact us:</p>
+      <div style="background:#0D1B2A;border-radius:4px;padding:28px 32px;">
+        <p style="font-size:15px;color:#fff;font-weight:600;margin-bottom:8px;">Pristine Home Painters</p>
+        <p style="font-size:15px;color:rgba(255,255,255,0.6);margin-bottom:6px;">11 Innovation Rd, Doreen VIC 3754</p>
+        <p style="font-size:15px;color:rgba(255,255,255,0.6);margin-bottom:6px;">Email: <a href="mailto:pristinehomepainting@outlook.com" style="color:#C8A96E;text-decoration:none;">pristinehomepainting@outlook.com</a></p>
+        <p style="font-size:15px;color:rgba(255,255,255,0.6);">Phone: <a href="tel:0426814067" style="color:#C8A96E;text-decoration:none;">0426 814 067</a></p>
+      </div>
+    </div>
+
+  </div>
+
+  <div style="background:#0D1B2A;padding:28px 32px;text-align:center;">
+    <button onclick="showMain()" style="background:transparent;border:1px solid rgba(255,255,255,0.25);color:#fff;padding:14px 32px;border-radius:2px;cursor:pointer;font-family:Inter,sans-serif;font-size:14px;letter-spacing:0.04em;">← Back to Main Site</button>
+  </div>
+</div>
+
 </body>
 </html>
